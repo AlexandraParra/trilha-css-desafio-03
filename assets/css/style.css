@@ -1,0 +1,108 @@
+body{
+    margin: 0% 10px;
+    height: 100vh;
+    display: grid;
+    grid: 
+    "nav nav nav nav nav" 56px
+    "sidebar main main main main" 1fr
+    /15% auto auto auto auto;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left{
+    display: flex;
+    gap: 30px;
+    height: 20px;
+}
+
+nav .center{
+    width: 400px;
+    border: 1px solid #CCCCCC;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+}
+
+.center input{
+    width: 348px;
+    height: 33px;
+    position: relative;
+    top: -6px;
+    border: none;
+}
+
+.center button{
+    height: 38px;
+    position: relative;
+    right: -4px;
+}
+
+.right{
+    padding-right: 20px;
+    gap: 24px;
+    display: flex;
+    height: 24px;
+}
+
+aside{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 24px;
+}
+
+aside>div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid: 
+    "playlist-item playlist-item playlist-item playlist-item" 1fr
+    "playlist-item playlist-item playlist-item playlist-item" 1fr
+    "playlist-item playlist-item playlist-item playlist-item" 1fr
+    / 1fr 1fr 1fr 1fr;
+    background: #cccccc23;
+}
+
+.playlist-item{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+
+.logo-dio{
+    width: 42px;
+    height: 42px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    font-weight: 900;
+}
+
+.description{
+    color: #4e4e4e;
+}
